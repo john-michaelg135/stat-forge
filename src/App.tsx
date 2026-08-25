@@ -296,7 +296,7 @@ export default function App() {
   return (
     <div className="relative min-h-screen">
       {/* ambient background */}
-      <div className="pointer-events-none fixed inset-0 overflow-hidden">
+      <div className="pointer-events-none fixed inset-0 overflow-hidden [contain:strict]">
         <div className="dotgrid absolute inset-0" />
         <div className="glow-a" />
         <div className="glow-b" />
@@ -584,8 +584,7 @@ export default function App() {
                       src={dataUri}
                       alt={`GitHub stats card for ${active.name}`}
                       draggable={false}
-                      className="h-auto max-w-full select-none rounded-2xl"
-                      style={{ filter: "drop-shadow(0 24px 48px rgba(0,0,0,0.45))" }}
+                      className="h-auto max-w-full select-none rounded-2xl shadow-[0_24px_48px_rgba(0,0,0,0.45)]"
                       width={size.w}
                       height={size.h}
                     />
@@ -645,7 +644,7 @@ export default function App() {
         </div>
 
         {/* ------------------------------ guide ------------------------------- */}
-        <div ref={guideRailRef} className="reveal">
+        <div ref={guideRailRef} className="reveal [content-visibility:auto] [contain-intrinsic-size:auto_800px]">
           <EmbedGuide />
         </div>
 
