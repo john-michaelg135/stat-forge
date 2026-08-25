@@ -1,8 +1,8 @@
-# ⚡ StatForge (Alpha)
+# StatForge (Alpha)
 
 > In-browser GitHub stats card generator. Fetches public profile data and forges a themeable, self-contained SVG for your README — no tokens, no server, no tracking.
 
-⚠️ **This project is in alpha.** Expect rough edges, breaking changes, and incomplete features.
+**This project is in alpha.** Expect rough edges, breaking changes, and incomplete features.
 
 ---
 
